@@ -4,73 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58735afe-ddd7-496f-a56c-71149fbe5f47" name="Changes" comment="update .gitignore">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/SoulBossSystem-Test.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/SoulBossSystem-Test.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="58735afe-ddd7-496f-a56c-71149fbe5f47" name="Changes" comment="Added/update .idea files">
       <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/magicstick/Magic_Stick.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/drop/Drops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/achievement/Achievement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/achievement/Achievement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/commands/give/AchievementGiveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/commands/give/AchievementGiveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/listeners/bossfight/AchievementBossFightListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/listeners/bossfight/AchievementBossFightListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/Arena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/ArenaHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/ArenaHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/ArenaMobType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/ArenaMobType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/ArenaReBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/ArenaReBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/commands/help/BossFightCreatorHelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/commands/help/BossFightCreatorHelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/commands/world/BossFightCreatorWorldCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/commands/world/BossFightCreatorWorldCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/GameExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/GameExecuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/creeper/CreeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/creeper/CreeperGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/zombie/ZombieGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/zombie/ZombieGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/listeners/bossfightconnections/join/BossfightJoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/listeners/bossfightconnections/join/BossfightJoinListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/listeners/join/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/listeners/join/JoinListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/listeners/login/LoginListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/listeners/login/LoginListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/world/WorldMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/world/WorldMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/world/settings/WorldSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/world/settings/WorldSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/ItemMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/ItemMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/commands/help/ItemHelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/commands/help/ItemHelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/commands/items/ItemGiveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/commands/items/ItemGiveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/items/creeperspawnegg/Creeper_Spawn_Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/creeperspawnegg/Creeper_Spawn_Egg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/items/magicbook/Magic_Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/magicbook/Magic_Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/items/zombiespawnegg/Zombie_Spawn_Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/zombiespawnegg/Zombie_Spawn_Egg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/listener/join/RecipeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/listener/join/RecipeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/listener/magicbook/MagicBookListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/listener/magicbook/MagicBookListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/recipes/CreeperSpawnEggRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/recipes/CreeperSpawnEggRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/recipes/ZombieSpawnEggRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/recipes/ZombieSpawnEggRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/recipes/loader/RecipeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/recipes/loader/RecipeLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/party/Party.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/party/Party.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/party/PartyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/party/PartyMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/party/commands/PartyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/party/commands/PartyCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/SoulBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/SoulBoss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/BossEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/BossEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/CreeperBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/CreeperBoss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/minis/MiniCreepers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/minis/MiniCreepers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/ZombieBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/ZombieBoss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/equipment/armors/leggins/Leggins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/equipment/armors/leggins/Leggings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/listener/AttackListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/listener/AttackListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/listener/DropListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/listener/DropListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/magic/attack/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/magic/attack/Attack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/magic/attackaction/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/magic/attackaction/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/random/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/random/RandomUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/messages/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/plugin/SoulBossSystemMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/plugin/SoulBossSystemMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/plugin/commands/help/SoulBossSystemHelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/plugin/commands/help/SoulBossSystemHelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/plugin/commands/plugin/SoulBossSystemCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/plugin/commands/plugin/SoulBossSystemCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/plugin/configuation/SoulBossSystemConfigurationLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/plugin/configuation/SoulBossSystemConfigurationLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/commands/CommandRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/commands/CommandRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/events/ListenerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/events/ListenerRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +53,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -130,7 +68,7 @@
       <workItem from="1701458603924" duration="1615000" />
       <workItem from="1701538646452" duration="1769000" />
       <workItem from="1701592856688" duration="796000" />
-      <workItem from="1701597621072" duration="3301000" />
+      <workItem from="1701597621072" duration="3955000" />
     </task>
     <task id="LOCAL-00001" summary="update .gitignore">
       <option name="closed" value="true" />
@@ -140,7 +78,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701460764687</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed writing/grammar errors in comments and code">
+      <option name="closed" value="true" />
+      <created>1701601149466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701601149466</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added/update .idea files">
+      <option name="closed" value="true" />
+      <created>1701601202533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701601202533</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +113,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore" />
+    <MESSAGE value="Fixed writing/grammar errors in comments and code" />
+    <MESSAGE value="Added/update .idea files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added/update .idea files" />
   </component>
 </project>
