@@ -4,6 +4,7 @@ import de.elia.api.thezepserapi.Complex;
 import de.elia.api.thezepserapi.TheZepserAPI;
 import de.elia.api.thezepserapi.components.ComplexItem;
 
+import de.elia.api.thezepserapi.enums.Type;
 import net.kyori.adventure.text.Component;
 
 import org.bukkit.Material;
@@ -25,7 +26,12 @@ public class Creeper_Spawn_Egg {
       ArrayList<Component> lore = new ArrayList<>();
       lore.add(MINI_MESSAGE.deserialize("<gray>With this egg you can spawn the </gray><green>Creeper Boss</green>"));
       Component name = MINI_MESSAGE.deserialize("<green>Creeper Boss</green> <gray>Spawn Egg</gray>");
-      CSE = TheZepserAPI.Item.create(Material.CREEPER_SPAWN_EGG, name, lore).setCustomModelData(1).setAmount(1).setKey(Complex.CREEPER_SPAWN_EGG, plugin).save();
+      CSE = TheZepserAPI.Item.create(Material.CREEPER_SPAWN_EGG, name, lore)
+              .setCustomModelData(1)
+              .setAmount(1)
+              .setKey(Complex.CREEPER_SPAWN_EGG, plugin)
+              .setType(Type.SPAWN_EGG)
+              .save();
     }
   }
 
