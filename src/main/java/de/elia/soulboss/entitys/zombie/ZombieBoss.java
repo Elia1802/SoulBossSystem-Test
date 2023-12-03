@@ -1,11 +1,10 @@
 package de.elia.soulboss.entitys.zombie;
 
 import de.elia.soulboss.entitys.BossEntity;
-import de.elia.soulboss.entitys.creeper.CreeperBoss;
 import de.elia.soulboss.entitys.zombie.equipment.armors.boots.Boots;
 import de.elia.soulboss.entitys.zombie.equipment.armors.chestplate.Chestplate;
 import de.elia.soulboss.entitys.zombie.equipment.armors.helmet.Helmet;
-import de.elia.soulboss.entitys.zombie.equipment.armors.leggins.Leggins;
+import de.elia.soulboss.entitys.zombie.equipment.armors.leggins.Leggings;
 import de.elia.soulboss.entitys.zombie.equipment.tools.axe.Axe;
 import de.elia.soulboss.entitys.zombie.equipment.tools.sword.Sword;
 import de.elia.systemclasses.keys.NameSpacedKeys;
@@ -35,7 +34,7 @@ import java.util.Collection;
 import java.util.Random;
 import java.util.UUID;
 
-//This class create the zombie boss
+//This class creates the zombie boss
 public class ZombieBoss extends Zombie implements BossEntity {
 
   public ZombieBoss(@NotNull Location location, String name) {
@@ -50,7 +49,7 @@ public class ZombieBoss extends Zombie implements BossEntity {
     this.randomTool(this);
     new Helmet().helmet(this);
     new Chestplate().chestplate(this);
-    new Leggins().leggins(this);
+    new Leggings().leggings(this);
     new Boots().boots(this);
     this.setPos(location.getX(), location.getY(), location.getZ());
     ((CraftWorld)location.getWorld()).getHandle().addFreshEntity(this);

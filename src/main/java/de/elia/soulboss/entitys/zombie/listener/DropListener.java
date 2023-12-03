@@ -10,7 +10,7 @@ import org.bukkit.event.entity.EntityDeathEvent;
 
 import org.jetbrains.annotations.NotNull;
 
-//This event drop the Drops of the zombie boss if he died
+//This event drops the Drops of the zombie boss if he died
 public class DropListener implements Listener {
   @EventHandler
   public void onDeath(@NotNull EntityDeathEvent event) {

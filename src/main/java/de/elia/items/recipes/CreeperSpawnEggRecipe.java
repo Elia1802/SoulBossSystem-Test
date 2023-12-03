@@ -10,7 +10,7 @@ import org.bukkit.inventory.ShapedRecipe;
 
 import org.jetbrains.annotations.Nullable;
 
-//This class create the recipe for the creeper spawn egg recipe
+//This class creates the recipe for the creeper spawn egg recipe
 public class CreeperSpawnEggRecipe {
 
   private static ShapedRecipe creeperSpawnEggRecipe;

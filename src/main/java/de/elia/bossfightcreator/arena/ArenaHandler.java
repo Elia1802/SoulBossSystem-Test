@@ -21,11 +21,11 @@ import java.util.Set;
 //This class handled and load all arenas.
 public class ArenaHandler {
 
-  public static final File FILE_PATH = new File(Main.main().getDataFolder() + "/arenas/");//Path of the schemetics
-  private static final int AREANS_TO_GENERATE = 10;//Set how many arenas to generates
-  private static final int ARENAS_X_DISTANCE = 200;//Set the distance to the next arena on the x cordinate
-  private static final int ARENAS_Z_DISTANCE = 200;//Set the distance to the next arena on the z cordinate
-  private static HashMap<String, Set<Arena>> arenas = new HashMap();
+  public static final File FILE_PATH = new File(Main.main().getDataFolder() + "/arenas/");//Path of the schematics
+  private static final int AREANS_TO_GENERATE = 10;//Set how many arenas to generate
+  private static final int ARENAS_X_DISTANCE = 200;//Set the distance to the next arena on the x coordinate
+  private static final int ARENAS_Z_DISTANCE = 200;//Set the distance to the next arena on the z coordinate
+  private static final HashMap<String, Set<Arena>> arenas = new HashMap<>();
   public static int ARENA_OFFSET = 0;
 
   //Gets a free arena.
@@ -33,7 +33,7 @@ public class ArenaHandler {
     return ArenaHandler.getArenaWithType(ArenaState.FREE, type);
   }
 
-  //Gets a arena with a specify state of a list.
+  //Gets an arena with a specified state of a list.
   @NotNull
   public static Optional<Arena> getArenaWithType(@NotNull ArenaState arenaState, @NotNull ArenaMobType type) {
     Optional<ArrayList<Arena>> t = Optional.of(ArenaHandler.getArenasWithType(arenaState, type));

@@ -21,7 +21,7 @@ import static de.elia.api.messages.builder.MessageBuilder.message;
 import static de.elia.api.messages.builder.MessageBuilder.red;
 import static de.elia.systemclasses.messages.Message.messageWithPrefix;
 
-//This command teleport a player in a other world
+//This command teleports a player in another world
 public class BossFightCreatorWorldCommand extends Command {
 
   public BossFightCreatorWorldCommand() {
@@ -37,19 +37,19 @@ public class BossFightCreatorWorldCommand extends Command {
     if (sender instanceof Player player) {
       if (player.hasPermission("soulbosssystem.bossfightgenerator.tpworld")) {
         if (args.length == 2) {
-          Player target = Bukkit.getPlayer((String)args[0]);
+          Player target = Bukkit.getPlayer(args[0]);
           if (target.getName() == null) {
             message(player, red(args[0] + "ist nicht online oder existiert nicht!"));
             return false;
           }
           if (args[1].equalsIgnoreCase("world_bossfight")) {
-            target.teleport(Bukkit.getWorld((String)"world_bossfight").getSpawnLocation());
+            target.teleport(Bukkit.getWorld("world_bossfight").getSpawnLocation());
             messageWithPrefix(target, gray("Du wurdest in die Welt ").append(aqua("world_bossfight")).append(gray(" teleportiert!")));
             messageWithPrefix(player, gray("Du hast den Spieler ").append(aqua(target.getName())).append(gray(" in die Welt ")).append(aqua("world_bossfight")).append(gray(" teleportiert!")));
             return true;
           }
           if (args[1].equalsIgnoreCase("world")) {
-            target.teleport(Bukkit.getWorld((String)"world").getSpawnLocation());
+            target.teleport(Bukkit.getWorld("world").getSpawnLocation());
             messageWithPrefix(target, gray("Du wurdest in die Welt ").append(aqua("world")).append(gray(" teleportiert!")));
             messageWithPrefix(player, gray("Du hast den Spieler ").append(aqua(target.getName())).append(gray(" in die Welt ")).append(aqua("world")).append(gray(" teleportiert!")));
             return true;

@@ -9,7 +9,7 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ShapedRecipe;
 import org.jetbrains.annotations.Nullable;
 
-//This class create the recipe for the zombie spawn egg recipe
+//This class creates the recipe for the zombie spawn egg recipe
 public class ZombieSpawnEggRecipe {
 
   private static ShapedRecipe bossSpawnEggRecipe;

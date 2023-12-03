@@ -11,10 +11,10 @@ import org.bukkit.plugin.Plugin;
 
 import org.jetbrains.annotations.NotNull;
 
-//This class load all recipes of the items.
+//This class loads all recipes of the items.
 public class RecipeLoader {
 
-  //This load the recipe of the spawn eggs
+  //This loads the recipe of the spawn eggs
   public static class SpawnEggLoader {
 
     public static void loadRecipe(Plugin plugin) {

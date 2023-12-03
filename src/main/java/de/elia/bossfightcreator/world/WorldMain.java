@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 
-//In this class i set a logger for the world creation and load the path for the arena files.
+//This class set a logger for the world creation and load the path for the arena files.
 public class WorldMain {
 
   private final Plugin plugin;

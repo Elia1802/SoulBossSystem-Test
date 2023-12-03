@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
 
-//This methode load the attacks for the zombie boss
+//This methode loads the attacks for the zombie boss
 public class AttackListener implements Listener {
 
   private boolean isAttackOn = false;

@@ -26,7 +26,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.UUID;
 
-//This class create the creeper boss
+//This class creates the creeper boss
 public class CreeperBoss extends Creeper implements BossEntity {
 
   private static final EntityDataAccessor<Boolean> DATA_IS_IGNITED = SynchedEntityData.defineId(Creeper.class, EntityDataSerializers.BOOLEAN);

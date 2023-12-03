@@ -16,7 +16,7 @@ import org.jetbrains.annotations.NotNull;
 import static de.elia.api.messages.builder.MessageBuilder.gray;
 import static de.elia.api.messages.builder.MessageBuilder.message;
 
-//This event give the magic book functions.
+//This event gives the magic book functions.
 //Coded by Elia and Zopnote
 public class MagicBookListener implements Listener {
 

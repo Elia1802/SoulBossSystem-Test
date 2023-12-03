@@ -106,7 +106,6 @@ public class SoulBossSystemCommand extends Command {
             }
             if (args[1].equalsIgnoreCase("reload")) {
               if (args[2].equalsIgnoreCase("files")) {
-                new SoulBossSystemConfigurationLoader();
                 SoulBossSystemConfigurationLoader.reload(SoulBossSystemMain.soulBossSystemMain().main());
                 return true;
               }

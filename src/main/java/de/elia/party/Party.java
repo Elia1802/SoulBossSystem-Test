@@ -21,7 +21,7 @@ import static de.elia.api.messages.builder.MessageBuilder.gray;
 import static de.elia.api.messages.builder.MessageBuilder.message;
 import static de.elia.api.messages.builder.MessageBuilder.red;
 
-//This class create a Party for the games
+//This class creates a Party for the games
 public class Party {
 
   private final Player owner;
@@ -41,7 +41,7 @@ public class Party {
     message(owner, gray("Und mit dem Befehl").append(aqua(" /party remove ")).append(aqua(Integer.toString(id))).append(aqua(" [PLAYER] ")).append(gray("kannst du ein Spieler aus der Party löschen!")));
   }
 
-  //This methode add a player to the party
+  //This methode adds a player to the party
   public void addPlayer(@NotNull Player newMember){
     if (this.members.contains(newMember)) {
       message(
@@ -66,7 +66,7 @@ public class Party {
     }
   }
 
-  //This methode remove a player of the party
+  //This methode removes a player of the party
   public void removePlayer(@NotNull Player target) {
     if (!this.members.contains(target)) {
       message(
@@ -83,7 +83,7 @@ public class Party {
     }
   }
 
-  //This methode remove the party owner
+  //This methode removes the party owner
   public void removeParty(@NotNull Player owner){
     this.members.clear();
     PartyUtils.PARTYS.remove(owner);
@@ -96,7 +96,7 @@ public class Party {
     return this.members;
   }
 
-  //Gets the Id
+  //Gets the ID
   public int id(){
     return this.id;
   }

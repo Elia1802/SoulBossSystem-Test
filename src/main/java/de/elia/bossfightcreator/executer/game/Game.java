@@ -3,7 +3,7 @@ package de.elia.bossfightcreator.executer.game;
 import java.util.ArrayList;
 import java.util.UUID;
 
-//This inteface marked a class to this class is a game
+//This interface marked a class to this class is a game
 //TODO: Move this class to the Library
 public interface Game {
 

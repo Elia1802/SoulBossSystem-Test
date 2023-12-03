@@ -6,7 +6,7 @@ import org.bukkit.plugin.Plugin;
 
 import org.jetbrains.annotations.NotNull;
 
-//This class manage all important files
+//This class manages all important files
 public class SoulBossSystemConfigurationLoader {
   private static SoulConfiguration achievementStorage;
   private static SoulConfiguration ideasStorage;

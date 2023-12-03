@@ -21,7 +21,7 @@ public class Loader implements PluginLoader {
 
   public void classloader(@NotNull PluginClasspathBuilder classpathBuilder) {
     var logger = classpathBuilder.getContext().getLogger();
-    logger.info("Loading " + NAME + " " + VERSION + " librarys...");
+    logger.info("Loading " + NAME + " " + VERSION + " libraries...");
     String soulLibrary = "SoulLibrary-3.0.1.jar";
     logger.info("Loading " + soulLibrary);
     String projectPath = System.getProperty("user.dir");
@@ -40,6 +40,6 @@ public class Loader implements PluginLoader {
     log4jCore.addRepository((new RemoteRepository.Builder("log4j-core", "default", "https://repo.papermc.io/repository/maven-public/")).build());
     classpathBuilder.addLibrary(log4jCore);
     logger.info("Log4J-Core 2.20.2 loaded!");
-    logger.info(NAME + " " + VERSION + " librarys loaded!");
+    logger.info(NAME + " " + VERSION + " libraries loaded!");
   }
 }

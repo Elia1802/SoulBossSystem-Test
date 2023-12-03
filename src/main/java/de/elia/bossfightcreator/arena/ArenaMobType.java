@@ -1,6 +1,6 @@
 package de.elia.bossfightcreator.arena;
 
-//All Aviable Mob types of the Arenas
+//All Available Mob types of the Arenas
 public enum ArenaMobType {
 
   ZOMBIE,

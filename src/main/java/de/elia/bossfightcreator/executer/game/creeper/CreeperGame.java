@@ -76,7 +76,7 @@ import static de.elia.api.messages.builder.MessageBuilder.message;
 import static de.elia.api.messages.builder.MessageBuilder.red;
 import static de.elia.bossfightcreator.BossFightCreatorMain.playerStatusMap;
 
-//This class processed the Creeer Bossfights
+//This class processed the Creeper Bossfights
 public class CreeperGame implements Game, Listener {
 
   private static final EntityDataAccessor<Boolean> DATA_IS_IGNITED = SynchedEntityData.defineId(CreeperBoss.class, EntityDataSerializers.BOOLEAN);
@@ -100,7 +100,7 @@ public class CreeperGame implements Game, Listener {
   private boolean isMiniCreeperAttackOn = false;
   private boolean ifAttackActive;
 
-  //This create a new Creeper game
+  //This creates a new Creeper game
   public CreeperGame(@NotNull Arena arena, @NotNull Player gameOwner, @NotNull JavaPlugin plugin, @NotNull Location spawnLocation, @NotNull Party gameParty){
     this.arena = arena;
     this.gameOwner = gameOwner;
@@ -115,7 +115,7 @@ public class CreeperGame implements Game, Listener {
     new StartGameTimer().start(120*20, gameOwner, spawnLocation, plugin);
   }
 
-  //This methode start the game
+  //This methode starts the game
   protected void startGame() {
     new BukkitRunnable() {
       @Override
@@ -141,12 +141,12 @@ public class CreeperGame implements Game, Listener {
     }.runTask(this.plugin);
   }
 
-  //This methode end the game
+  //This methode ends the game
   protected void endGame(){
     new BukkitRunnable(){
       @Override
       public void run() {
-        CreeperGame.this.logger.logInfo("Remove the gamme properties of all players and teleport this players back to World world...");
+        CreeperGame.this.logger.logInfo("Remove the game properties of all players and teleport this players back to World world...");
         CreeperGame.this.gameParty.members().forEach(player -> {
           player.teleport(mainSpawnLocation);
           playerStatusMap().replace(player, 0);
@@ -157,26 +157,26 @@ public class CreeperGame implements Game, Listener {
         CreeperGame.this.logger.logInfo("Party removed!");
         CreeperGame.this.logger.logInfo("Rebuild the arena...");
         ArenaReBuilder.reBuildArena(CreeperGame.this.arena);
-        CreeperGame.this.logger.logInfo("Arena rebuilded!");
-        ALL_ACTIVE_GAMES.remove(this);
+        CreeperGame.this.logger.logInfo("Arena rebuild!");
+        ALL_ACTIVE_GAMES.remove(CreeperGame.this);
         message(CreeperGame.this.gameOwner, gray("Game end!"));
       }
     }.runTask(this.plugin);
   }
 
-  //This methode kill this game
+  //This methode kills this game
   @Override
   public void kill(String reason, boolean isRestart){
     killGame(reason, isRestart);
   }
 
-  //This methode kill this game
+  //This methode kills this game
   protected void killGame(String reason, boolean isRestart){
     if (!isRestart) {
       new BukkitRunnable(){
         @Override
         public void run() {
-          CreeperGame.this.logger.logInfo("Remove the gamme properties of all players and teleport this players back to World world...");
+          CreeperGame.this.logger.logInfo("Remove the game properties of all players and teleport this players back to World world...");
           CreeperGame.this.gameParty.members().forEach(player -> {
             player.teleport(mainSpawnLocation);
             playerStatusMap().replace(player, 0);
@@ -187,14 +187,14 @@ public class CreeperGame implements Game, Listener {
           CreeperGame.this.logger.logInfo("Remove party...");
           CreeperGame.this.gameParty.removeParty(CreeperGame.this.gameOwner);
           CreeperGame.this.logger.logInfo("Party removed!");
-          ALL_ACTIVE_GAMES.remove(this);
+          ALL_ACTIVE_GAMES.remove(CreeperGame.this);
           message(CreeperGame.this.gameOwner, gray("Game end!"));
         }
       }.runTask(this.plugin);
     }
   }
 
-  //This methode execute the tasks if the creeper die
+  //This methode executes the tasks if the creeper dies
   public void die(@NotNull DamageSource damageSource, Creeper entity) {
     if (CreeperGame.this.region == null){
       entity.getBukkitEntity().getWorld().strikeLightningEffect(entity.getBukkitEntity().getLocation());
@@ -217,7 +217,7 @@ public class CreeperGame implements Game, Listener {
 
   }
 
-  //This methode execute the tasks if the creeper exploded
+  //This methode executes the tasks if the creeper exploded
   public void explodeCreeper(@NotNull Creeper entity) {
     if (!entity.level().isClientSide) {
       float f = entity.isPowered() ? 10.0F : 5.0F;//Edit by Elia
@@ -264,7 +264,7 @@ public class CreeperGame implements Game, Listener {
     }
   }
 
-  //This methode start the first attack of the creeper
+  //This methode starts the first attack of the creeper
   protected void startAttack1(int seconds, Location location){
     new BukkitRunnable() {
       private int ticksElapsed = 0;
@@ -285,7 +285,7 @@ public class CreeperGame implements Game, Listener {
     }.runTaskTimer(SoulBoss.soulBoss().main(), 0, 1);
   }
 
-  //This methode start the second attack of the creeper
+  //This methode starts the second attack of the creeper
   public void startAttack2(){
     this.gameParty.members().forEach(player -> {
       Location playerLocation = player.getLocation();
@@ -310,7 +310,7 @@ public class CreeperGame implements Game, Listener {
     });
   }
 
-  //This Event kill the game if the party owner disconnect
+  //This Event kills the game if the party owner disconnects
   @EventHandler
   private void onPlayerQuitServer(@NotNull PlayerQuitEvent event){
     Player player = event.getPlayer();
@@ -322,7 +322,7 @@ public class CreeperGame implements Game, Listener {
     }
   }
 
-  //This Event save a location of the died player
+  //This Event saves a location of the died player
   @EventHandler
   private void onPlayerDie(@NotNull PlayerDeathEvent event){
     Player player = event.getPlayer();
@@ -331,7 +331,7 @@ public class CreeperGame implements Game, Listener {
     }
   }
 
-  //This event respawn a player if he has a location saved
+  //This event respawns a player if he has a location saved
   @EventHandler
   private void onPlayerRespawn(@NotNull PlayerRespawnEvent event) {
     Player player = event.getPlayer();
@@ -351,7 +351,7 @@ public class CreeperGame implements Game, Listener {
     }
   }
 
-  //This event load the attacks
+  //This event loads the attacks
   @EventHandler
   private void onInRegionAttack(@NotNull EntityDamageByEntityEvent event){
     Entity damagedEntity = event.getEntity();
@@ -387,7 +387,7 @@ public class CreeperGame implements Game, Listener {
     }
   }
 
-  //This event load the attacks
+  //This event loads the attacks
   @EventHandler
   private void onBossDamage(@NotNull EntityDamageByEntityEvent event){
     Entity bossEntity = event.getEntity();
@@ -451,7 +451,7 @@ public class CreeperGame implements Game, Listener {
     }
   }
 
-  //This event update the Bossbar
+  //This event updates the Bossbar
   @EventHandler
   private void onUpdateBar(@NotNull EntityDamageEvent event) {
     Entity entity = event.getEntity();
@@ -463,12 +463,12 @@ public class CreeperGame implements Game, Listener {
     }
   }
 
-  //This class create, update and remove the Bossbar
+  //This class creates, updates and removes the Bossbar
   private class GameBossBar {
 
-    private Map<BossEntity, BossBar> bossBossBar = new HashMap<>();
+    private final Map<BossEntity, BossBar> bossBossBar = new HashMap<>();
 
-    //This methode create the Bossbar
+    //This methode creates the Bossbar
     protected void create(BossEntity boss) {
       BossBar bossBar = Bukkit.createBossBar("Test_BossBar_Creeper", BarColor.PINK, BarStyle.SEGMENTED_10);
       CreeperGame.this.gameParty.members().forEach(bossBar::addPlayer);
@@ -478,7 +478,7 @@ public class CreeperGame implements Game, Listener {
       this.bossBossBar.put(boss, bossBar);
     }
 
-    //This methode update the Bossbar
+    //This methode updates the Bossbar
     protected void update(BossEntity boss) {
       if (this.bossBossBar.containsKey(boss)) {
         BossBar bossBar = this.bossBossBar.get(boss);
@@ -487,7 +487,7 @@ public class CreeperGame implements Game, Listener {
       }
     }
 
-    //This methode remove the Bossbar
+    //This methode removes the Bossbar
     protected void remove(BossEntity boss) {
       if (this.bossBossBar.containsKey(boss)) {
         BossBar bossBar = this.bossBossBar.get(boss);
@@ -498,7 +498,7 @@ public class CreeperGame implements Game, Listener {
 
   }
 
-  //This class start a timer for the start
+  //This class starts a timer for the start
   private class StartGameTimer extends TimerTasks {
 
     private void timeMessage(int time){
@@ -556,7 +556,7 @@ public class CreeperGame implements Game, Listener {
 
   }
 
-  //This class start a timer for the end
+  //This class starts a timer for the end
   private class EndGameTimer extends TimerTasks {
 
     private void timeMessage(int time){

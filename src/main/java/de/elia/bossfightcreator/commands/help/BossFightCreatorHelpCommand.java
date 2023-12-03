@@ -19,7 +19,7 @@ import static de.elia.api.messages.builder.MessageBuilder.gray;
 import static de.elia.api.messages.builder.MessageBuilder.red;
 import static de.elia.systemclasses.messages.Message.messageWithPrefix;
 
-//This command send a help about the Bossfightcreator plugin
+//This command sends a help about the Bossfightcreator plugin
 public class BossFightCreatorHelpCommand extends Command {
 
   public BossFightCreatorHelpCommand() {

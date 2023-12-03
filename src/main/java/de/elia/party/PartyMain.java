@@ -13,13 +13,13 @@ public class PartyMain implements SoulPlugin {
 
   private static PartyMain partyMain;
 
-  //This methode load this plugin.
+  //This methode loads this plugin.
   @Override
   public void enable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
     partyMain = this;
   }
 
-  //This methode unload this plugin.
+  //This methode unloads this plugin.
   @Override
   public void disable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
 
@@ -31,7 +31,7 @@ public class PartyMain implements SoulPlugin {
     return partyMain;
   }
 
-  //Gets the instance of the main class of this system.
+  //Gets the instance, of the main class, of this system.
   @NotNull
   public Main main(){
     return Main.main();

@@ -51,7 +51,7 @@ public class ZombieGame implements Listener, Game {
   private boolean isBossDie = false;
   
 
-  //This create a new game.
+  //This creates a new game.
   public ZombieGame(@NotNull Arena arena, @NotNull Player gameOwner, JavaPlugin plugin, @NotNull Party party) {
     this.arena = arena;
     this.gameOwner = gameOwner;
@@ -65,7 +65,7 @@ public class ZombieGame implements Listener, Game {
     new GameStartTimer().start(121*20, gameOwner, this.spawnLocation, plugin);
   }
 
-  //This start the game.
+  //This starts the game.
   public void startGame() {
     BossFightCreatorMain.bossFightCreator().bossFightCreatorLogger().logInfo("Spawn the Boss...");
     new BukkitRunnable(){
@@ -87,7 +87,7 @@ public class ZombieGame implements Listener, Game {
     }.runTask(this.plugin);
   }
 
-  //This methode end this game
+  //This methode ends this game
   public void end(Location location) {
     BossFightCreatorMain.bossFightCreator().bossFightCreatorLogger().logInfo("Teleport all game players in the World!");
     this.party.members().forEach(player -> {
@@ -101,7 +101,7 @@ public class ZombieGame implements Listener, Game {
     BossFightCreatorMain.bossFightCreator().bossFightCreatorLogger().logInfo("Rebuild the arena " + this.arena.getArenaID());
     ArenaReBuilder.reBuildArena(this.arena);
     ALL_ACTIVE_GAMES.remove(this);
-    BossFightCreatorMain.bossFightCreator().bossFightCreatorLogger().logInfo("Game sucessful end!");
+    BossFightCreatorMain.bossFightCreator().bossFightCreatorLogger().logInfo("Game successful end!");
   }
 
   //This methode killed a game with a reason
@@ -126,7 +126,7 @@ public class ZombieGame implements Listener, Game {
       party.removeParty(gameOwner);
       BossFightCreatorMain.bossFightCreator().bossFightCreatorLogger().logInfo("Rebuild the arena " + this.arena.getArenaID());
       ArenaReBuilder.reBuildArena(this.arena);
-      BossFightCreatorMain.bossFightCreator().bossFightCreatorLogger().logInfo("Game sucessful end!");
+      BossFightCreatorMain.bossFightCreator().bossFightCreatorLogger().logInfo("Game successful end!");
       ALL_ACTIVE_GAMES.remove(this);
     }
   }
@@ -143,7 +143,7 @@ public class ZombieGame implements Listener, Game {
     return this.boss;
   }
 
-  //This event end this game if the game owner disconnect.
+  //This event ends this game if the game owner disconnects.
   @EventHandler
   private void onPlayerQuitServer(@NotNull PlayerQuitEvent event) {
     if (event.getPlayer() == this.gameOwner) {
@@ -161,7 +161,7 @@ public class ZombieGame implements Listener, Game {
     }
   }
 
-  //This event kill the game or kick a player if he die
+  //This event kills the game or kicks a player if he dies
   @EventHandler
   private void onPlayerDie(@NotNull PlayerDeathEvent event) {
     if (event.getPlayer() == this.gameOwner) {
@@ -179,7 +179,7 @@ public class ZombieGame implements Listener, Game {
     }
   }
 
-  //This class create a timer for the start.
+  //This class creates a timer for the start.
   public class GameStartTimer extends TimerTasks {
 
     private void timerMessage(int seconds) {
@@ -260,7 +260,7 @@ public class ZombieGame implements Listener, Game {
     }
   }
 
-  //This class create a timer for the end of the game.
+  //This class creates a timer for the end of the game.
   public class GameEndTimer extends TimerTasks {
 
     private void timerMessage(int seconds, Player target) {
@@ -274,6 +274,7 @@ public class ZombieGame implements Listener, Game {
         public void run() {
           if (!ZombieGame.this.isBossDie) {
             ZombieGame.this.boss.kill();
+            ZombieGame.this.isBossDie = true;
           }
         }
       }, plugin);

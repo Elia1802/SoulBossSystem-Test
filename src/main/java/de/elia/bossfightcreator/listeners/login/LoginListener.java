@@ -13,9 +13,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 
-//This event give the player a game status.
-//State 0: player haven't a game
-//State 1: player have a game
+//This event gives the player a game status.
+//State 0: player hasn't a game
+//State 1: player has a game
 public class LoginListener implements Listener {
 
   @EventHandler

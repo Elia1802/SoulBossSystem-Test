@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 
-//This class is a Arena and has all important values for the arena.
+//This class is an Arena and has all important values for the arena.
 public class Arena {
 
   private final Location location;
@@ -65,7 +65,7 @@ public class Arena {
     return this.name;
   }
 
-  //Gets the Id of the Arena
+  //Gets the ID of the Arena
   @NotNull
   public String getArenaID() {
     return this.arenaID;

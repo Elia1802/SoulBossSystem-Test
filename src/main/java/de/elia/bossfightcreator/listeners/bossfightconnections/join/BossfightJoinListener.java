@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import static de.elia.api.messages.builder.MessageBuilder.gold;
 import static de.elia.api.messages.builder.MessageBuilder.gray;
 
-//This Event called if a player join a party
+//This Event called if a player joins a party
 public class BossfightJoinListener implements Listener {
 
   @EventHandler

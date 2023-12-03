@@ -20,7 +20,7 @@ public class SoulBoss implements SoulPlugin {
 
   private static SoulBoss soulboss;
 
-  //This methode load this plugin.
+  //This methode loads this plugin.
   public void enable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
     this.soulBossLogger().logInfo("Load SoulBoss...");
     soulboss = this;
@@ -30,7 +30,7 @@ public class SoulBoss implements SoulPlugin {
     this.soulBossLogger().logInfo("SoulBoss loaded!");
   }
 
-  //This methode unload this plugin.
+  //This methode unloads this plugin.
   public void disable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
     Bukkit.getServer().getWorld("world_bossfight").getEntities().forEach(entity -> {
       if (entity.getType() == EntityType.ZOMBIE) {
@@ -51,7 +51,7 @@ public class SoulBoss implements SoulPlugin {
     return soulboss;
   }
 
-  //Gets the instance of the main class of this system.
+  //Gets the instance, of the main class, of this system.
   @NotNull
   public Main main() {
     return Main.main();

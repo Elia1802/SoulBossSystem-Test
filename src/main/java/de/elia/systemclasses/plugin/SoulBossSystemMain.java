@@ -17,7 +17,7 @@ public class SoulBossSystemMain implements SoulPlugin {
 
   private static SoulBossSystemMain soulBossSystemMain;
 
-  //This methode load this plugin.
+  //This methode loads this plugin.
   public void enable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
     soulBossSystemMain = this;
     this.soulBossSystemLogger().logInfo("Load SoulBossSystem plugin...");
@@ -44,7 +44,7 @@ public class SoulBossSystemMain implements SoulPlugin {
     return soulBossSystemMain;
   }
 
-  //Gets the instance of the main class of this system.
+  //Gets the instance, of the main class, of this system.
   @NotNull
   public Main main() {
     return Main.main();

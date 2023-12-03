@@ -22,7 +22,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
-//This class register all listeners
+//This class registers all listeners
 public class ListenerRegister {
 
   public static final Set<Listener> LISTENERS = new HashSet<>();

@@ -6,7 +6,6 @@ import de.elia.api.thezepserapi.components.ComplexItem;
 
 import de.elia.items.items.Item;
 import de.elia.items.ItemMain;
-import de.elia.items.recipes.ZombieSpawnEggRecipe;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -25,7 +24,7 @@ import static de.elia.api.messages.builder.MessageBuilder.message;
 import static de.elia.api.messages.builder.MessageBuilder.red;
 import static de.elia.systemclasses.messages.Message.messageWithPrefix;
 
-//This command give a player a item.
+//This command gives a player an item.
 public class ItemGiveCommand extends Command {
 
   public ItemGiveCommand() {
@@ -37,7 +36,6 @@ public class ItemGiveCommand extends Command {
   }
 
   public boolean execute(@NotNull CommandSender sender, @NotNull String commandLabel, @NotNull String[] args) {
-    ZombieSpawnEggRecipe zombieSpawnEggRecipe = new ZombieSpawnEggRecipe();
     PluginLogger logger = ItemMain.itemMain().itemLogger();
     if (sender instanceof Player player) {
       if (player.hasPermission("soulbosssystem.items.give")) {

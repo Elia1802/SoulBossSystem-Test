@@ -9,9 +9,9 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-//Create the leggins for the Zombie
-public class Leggins {
-  public void leggins(Zombie zombie) {
+//Create the leggings for the Zombie
+public class Leggings {
+  public void leggings(Zombie zombie) {
     ItemStack diamond = new ItemStack(Material.DIAMOND_LEGGINGS);
     ItemMeta diamondMeta = diamond.getItemMeta();
     diamondMeta.addEnchant(Enchantment.PROTECTION_FIRE, 5, true);

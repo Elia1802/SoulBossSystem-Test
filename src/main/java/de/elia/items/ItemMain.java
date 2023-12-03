@@ -27,7 +27,7 @@ public class ItemMain implements SoulPlugin {
   public static final Set<NamespacedKey> RECIPES = new HashSet<>();
   private static ItemMain itemMain;
 
-  //This methode load this plugin.
+  //This methode loads this plugin.
   @Override
   public void enable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
     this.itemLogger().logInfo("Load Item Plugin...");
@@ -39,7 +39,7 @@ public class ItemMain implements SoulPlugin {
     this.itemLogger().logInfo("Item plugin loaded!");
   }
 
-  //This methode unload this plugin.
+  //This methode unloads this plugin.
   @Override
   public void disable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
     this.itemLogger().logInfo("Item unloaded!");
@@ -52,7 +52,7 @@ public class ItemMain implements SoulPlugin {
     return itemMain;
   }
 
-  //Gets the instance of the main class of this system.
+  //Gets the instance, of the main class, of this system.
   @NotNull
   public Main main() {
     return Main.main();

@@ -18,7 +18,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Collection;
 
-//This class create the attacks for the zombie
+//This class creates the attacks for the zombie
 public class Attack {
   private static Location position;
   private static Vector direction;

@@ -30,7 +30,7 @@ import static de.elia.systemclasses.register.commands.CommandRegister.registerCo
 import static de.elia.systemclasses.register.events.ListenerRegister.registerListener;
 import static org.bukkit.Bukkit.getPluginManager;
 
-//This class load the complete system. Its the main class of all things in this system
+//This class loads the complete system. Its main class of all things in this system
 public class Main extends JavaPlugin {
 
   public static Main main;
@@ -318,7 +318,7 @@ public class Main extends JavaPlugin {
     return main;
   }
 
-  //Gets soul library
+  //Gets the soul library
   @Nullable
   public Plugin soulLibraryMain() {
     return getPluginManager().getPlugin("SoulLibrary");

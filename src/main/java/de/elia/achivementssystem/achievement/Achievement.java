@@ -27,15 +27,15 @@ import static de.elia.systemclasses.messages.Message.broadcastWithPrefix;
  *  - New Animation for the Achievements
  */
 
-//This class give and remove the Player a Achievement.
+//This class give and remove the Player an Achievement.
 public class Achievement {
 
-  //Requires has the Player a Achievement
+  //Requires has the Player an Achievement
   public static boolean hasAchievement(@NotNull Player player, @NotNull Achievements achievement) {
     return SoulBossSystemConfigurationLoader.achievementStorage().get(player.getUniqueId() + ".Achievements." + achievement.dataID()) != null;
   }
 
-  //Give the player a Achievement
+  //Give the player an Achievement
   public static void giveAchievement(@NotNull Player player, @NotNull Achievements achievement) {
     if (!hasAchievement(player, achievement)) {//If player has not the achievement -> give player achievement
       SoulBossSystemConfigurationLoader.achievementStorage().set(player.getUniqueId() + ".Achievements." + achievement.dataID(), true);
@@ -50,7 +50,7 @@ public class Achievement {
     }
   }
 
-  //Remove the Player a Achievement
+  //Remove the Player an Achievement
   public static void removeAchievement(@NotNull Player player, @NotNull Achievements achievement) {
     if (hasAchievement(player, achievement)) {//If player has the achievement -> give player achievement
       SoulBossSystemConfigurationLoader.achievementStorage().set(player.getUniqueId() + ".Achievements." + achievement.dataID(), null);

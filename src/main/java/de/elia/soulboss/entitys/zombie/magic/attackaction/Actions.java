@@ -18,7 +18,7 @@ import org.bukkit.util.Vector;
 
 import org.jetbrains.annotations.NotNull;
 
-//This methode load the attacks
+//This methode loads the attacks
 public class Actions {
   public static void actionTeleport(Vector vector, final Player player, final Entity entity) {
     new BukkitRunnable(){

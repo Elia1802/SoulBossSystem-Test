@@ -10,7 +10,7 @@ import com.sk89q.worldedit.WorldEditException;
 
 import org.jetbrains.annotations.NotNull;
 
-//This class rebuild a arena
+//This class rebuilds an arena
 public class ArenaReBuilder {
 
   //Rebuild a Arena.

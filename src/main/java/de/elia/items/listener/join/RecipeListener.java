@@ -14,7 +14,7 @@ import java.util.Random;
 import static de.elia.api.messages.builder.MessageBuilder.message;
 import static de.elia.api.messages.builder.MessageBuilder.white;
 
-//This event give a notice to the recipes for the spawn egg
+//This event gives a notice to the recipes for the spawn egg
 public class RecipeListener implements Listener {
 
   @EventHandler

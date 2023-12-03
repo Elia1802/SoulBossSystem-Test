@@ -18,7 +18,7 @@ import static de.elia.api.messages.builder.MessageBuilder.message;
 import static de.elia.api.messages.builder.MessageBuilder.red;
 import static de.elia.party.utils.PartyUtils.PARTYS;
 
-//This command add/remove a player in a party
+//This command adds/removes a player at a party
 public class PartyCommand extends Command {
 
   protected PartyCommand(@NotNull String name, @NotNull String description, @NotNull String usageMessage, @NotNull List<String> aliases) {
@@ -26,7 +26,7 @@ public class PartyCommand extends Command {
   }
 
   public PartyCommand(){
-    this("party", "Thats the Party command to add or remove a Player", "party add/remove [PARTY] [PLAYER]", List.of("p"));
+    this("party", "That's the Party command to add or remove a Player", "party add/remove [PARTY] [PLAYER]", List.of("p"));
   }
 
   @Override

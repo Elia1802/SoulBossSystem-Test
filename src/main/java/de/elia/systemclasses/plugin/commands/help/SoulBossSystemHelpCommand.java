@@ -23,7 +23,7 @@ import static de.elia.systemclasses.messages.Message.messageWithPrefix;
 public class SoulBossSystemHelpCommand extends Command {
 
   public SoulBossSystemHelpCommand() {
-    this("soulbosssystemhelp", "Send a help about all plugins in this plugin", "/soulbosssystemhelp [HELP]", Arrays.asList("sbshelp", "sbsh"));
+    this("PlanetEcosystems", "Send a help about all plugins in this plugin", "/PlanetEcosystems [HELP]", Arrays.asList("sbshelp", "sbsh"));
   }
 
   public SoulBossSystemHelpCommand(@NotNull String name, @NotNull String description, @NotNull String usageMessage, @NotNull List<String> aliases) {

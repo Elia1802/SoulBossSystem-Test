@@ -14,7 +14,7 @@ import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-//This class is a part of the TheZepserAPI of Zopnote. With this class you can get, drop and give a Item
+//This class is a part of the TheZepserAPI of Zopnote. With this class you can get, drop and give an Item
 //Coded by
 public class Item {
 
@@ -24,10 +24,10 @@ public class Item {
     new Magic_Book(plugin);
   }
 
-  //Gets a specify item.
+  //Gets a specified item.
   @Nullable
   public static ComplexItem get(Complex item) throws CloneNotSupportedException {
-    if (ComplexItem.SAVED.containsKey((Object)item)) {
+    if (ComplexItem.SAVED.containsKey(item)) {
       return (ComplexItem)(ComplexItem.SAVED.get(item)).clone();
     }
     return null;
@@ -39,14 +39,14 @@ public class Item {
       return;
     }
     if (ComplexItem.SAVED.containsKey(item)) {
-      ((ComplexItem)ComplexItem.SAVED.get(item)).setAmount(Math.min(amount, 64)).giveItem(player);
+      ComplexItem.SAVED.get(item).setAmount(Math.min(amount, 64)).giveItem(player);
     }
   }
 
-  //Drop the item an a specify location in the world.
+  //Drop the item a specified location in the world.
   public static void drop(@NotNull Location location, @NotNull Complex item, int amount) {
     if (ComplexItem.SAVED.containsKey(item)) {
-      ((ComplexItem)ComplexItem.SAVED.get(item)).setAmount(amount).drop(location);
+      ComplexItem.SAVED.get(item).setAmount(amount).drop(location);
     }
   }
 }

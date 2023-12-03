@@ -1,6 +1,6 @@
 package de.elia.soulboss.entitys;
 
-//This class marked a Entity class to a Boss entity
+//This class marked an Entity class to a Boss entity
 public interface BossEntity {
 
   float health();

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import static de.elia.items.ItemMain.MINI_MESSAGE;
 
-//This class create the creeper boss spawn egg
+//This class creates the creeper boss spawn egg
 public class Creeper_Spawn_Egg {
 
   private static ComplexItem CSE;

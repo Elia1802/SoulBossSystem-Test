@@ -1,19 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- * 
- * Could not load the following classes:
- *  de.elia.api.thezepserapi.Complex
- *  de.elia.api.thezepserapi.TheZepserAPI$item
- *  de.elia.api.thezepserapi.components.ComplexItem
- *  net.kyori.adventure.text.Component
- *  org.bukkit.Material
- *  org.bukkit.attribute.Attribute
- *  org.bukkit.attribute.AttributeModifier$Operation
- *  org.bukkit.enchantments.Enchantment
- *  org.bukkit.inventory.EquipmentSlot
- *  org.bukkit.inventory.ItemFlag
- *  org.bukkit.plugin.Plugin
- */
 package de.elia.items.items.magicbook;
 
 import de.elia.api.thezepserapi.Complex;
@@ -34,7 +18,7 @@ import org.bukkit.plugin.Plugin;
 
 import java.util.ArrayList;
 
-//This class create the item magic book
+//This class creates the item magic book
 public class Magic_Book {
 
     private static ComplexItem MB;

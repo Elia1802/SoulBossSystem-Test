@@ -41,7 +41,7 @@ import static de.elia.api.messages.builder.MessageBuilder.message;
 import static de.elia.api.messages.builder.MessageBuilder.red;
 import static de.elia.systemclasses.messages.Message.messageWithPrefix;
 
-//This class execute a game if the player clicked a spawn egg
+//This class executes a game if the player clicked a spawn egg
 public class GameExecuter implements Listener {
 
   private final PluginLogger logger = bossFightCreator().bossFightCreatorLogger();
@@ -110,7 +110,7 @@ public class GameExecuter implements Listener {
     }
   }
 
-  //This methode execute a creeper game
+  //This methode executes a creeper game
   protected void createCreeperGame(@NotNull Player player, ItemStack item){
     if (item == null)return;
     if (playerStatusMap().get(player) == 0) {

@@ -13,7 +13,7 @@ import org.bukkit.plugin.Plugin;
 
 import java.util.ArrayList;
 
-//This class create the zombies boss spawn egg
+//This class creates the zombie boss spawn egg
 public class Zombie_Spawn_Egg {
   private static ComplexItem ZSE;
 

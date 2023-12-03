@@ -21,7 +21,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.lang.String;
 
-//This class create a creeper for the mini attack
+//This class creates a creeper for the mini attack
 public class MiniCreepers extends Creeper {
 
   private static final EntityDataAccessor<Boolean> DATA_IS_IGNITED = SynchedEntityData.defineId(Creeper.class, EntityDataSerializers.BOOLEAN);

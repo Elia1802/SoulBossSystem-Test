@@ -8,7 +8,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import org.jetbrains.annotations.NotNull;
 
-//This event teleport the player to the World "world" if the player is in the World "world_bossfight"
+//This event teleports the player to the World "world" if the player is in the World "world_bossfight"
 public class JoinListener implements Listener {
 
   @EventHandler

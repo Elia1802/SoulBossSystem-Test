@@ -33,7 +33,7 @@ import static de.elia.systemclasses.messages.Message.messageWithPrefix;
  *  - New Animation for the Achievements
  */
 
-//A Command to give a Player a Achievement
+//A Command to give a Player an Achievement
 public class AchievementGiveCommand extends Command {
 
   public AchievementGiveCommand() {

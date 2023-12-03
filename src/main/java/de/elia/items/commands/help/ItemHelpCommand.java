@@ -19,7 +19,7 @@ import static de.elia.api.messages.builder.MessageBuilder.gray;
 import static de.elia.api.messages.builder.MessageBuilder.red;
 import static de.elia.systemclasses.messages.Message.messageWithPrefix;
 
-//This command give the player a help about the item plugin.
+//This command gives the player a help about the item plugin.
 public class ItemHelpCommand extends Command {
 
   public ItemHelpCommand() {

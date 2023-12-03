@@ -24,7 +24,7 @@ import static de.elia.achivementssystem.achievement.Achievement.giveAchievement;
  *  - New Animation for the Achievements
  */
 
-//This Listener start if the Zombieboss hit of a Player. If the Player don't have the Achievement Bossfight gives this event this Achievement.
+//This Listener start if the Zombieboss hit of a Player. If the Player doesn't have the Achievement, Bossfight gives this event this Achievement.
 public class AchievementBossFightListener implements Listener {
 
   public AchievementBossFightListener() {
