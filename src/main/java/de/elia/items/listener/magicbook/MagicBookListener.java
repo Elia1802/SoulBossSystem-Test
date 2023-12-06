@@ -4,7 +4,6 @@ import de.elia.api.thezepserapi.Complex;
 import de.elia.api.thezepserapi.TheZepserAPI;
 import de.elia.api.thezepserapi.spells.Spells;
 
-import de.elia.items.ItemMain;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -47,7 +46,7 @@ public class MagicBookListener implements Listener {
             }
             x++;
           }
-        }.runTaskTimer(ItemMain.itemMain().main(), 0, 1);
+        }.runTaskTimer(this.plugin, 0, 1);
       }else {
         event.setCancelled(true);
         message(event.getPlayer(), gray("Das Item lädt grade nach"));
@@ -68,7 +67,7 @@ public class MagicBookListener implements Listener {
             }
             x++;
           }
-        }.runTaskTimer(ItemMain.itemMain().main(), 0, 1);
+        }.runTaskTimer(this.plugin, 0, 1);
       }else {
         event.setCancelled(true);
         message(event.getPlayer(), gray("Das Item lädt grade nach"));
