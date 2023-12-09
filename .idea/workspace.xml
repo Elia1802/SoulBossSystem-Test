@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58735afe-ddd7-496f-a56c-71149fbe5f47" name="Changes" comment="remove sha-1-hash.txt of the Resourcepack">
-      <change afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/magic_stick/2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/wooden_hoe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/textures/item/magic_stick/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/magicstick/Magic_Stick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/listener/magicstick/MagicStickListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/drop/Drops.java" afterDir="false" />
+    <list default="true" id="58735afe-ddd7-496f-a56c-71149fbe5f47" name="Changes" comment="update workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/SoulLibrary-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library/SoulLibrary-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepack/SoulSMP-2.0.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/events/ListenerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/events/ListenerRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/resourcepack/soul/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/PluginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/PluginInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/creeper/CreeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/creeper/CreeperGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/CreeperBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/CreeperBoss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/minis/MiniCreepers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/minis/MiniCreepers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/ZombieBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/ZombieBoss.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +140,7 @@
       <workItem from="1701955072029" duration="769000" />
       <workItem from="1701963757841" duration="4187000" />
       <workItem from="1702050191638" duration="4080000" />
-      <workItem from="1702148557894" duration="459000" />
+      <workItem from="1702148557894" duration="5113000" />
     </task>
     <task id="LOCAL-00001" summary="update .gitignore">
       <option name="closed" value="true" />
@@ -229,7 +230,39 @@
       <option name="project" value="LOCAL" />
       <updated>1701864433625</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated Library">
+      <option name="closed" value="true" />
+      <created>1702149146705</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702149146705</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Edit the new Item Magic Stick">
+      <option name="closed" value="true" />
+      <created>1702149208500</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702149208500</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Edit the new Item Magic Stick">
+      <option name="closed" value="true" />
+      <created>1702149221467</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702149221467</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1702149245251</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702149245251</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,8 +288,10 @@
     <MESSAGE value="update library jar" />
     <MESSAGE value="Added Item type" />
     <MESSAGE value="refactor plugin instance" />
-    <MESSAGE value="update workspace.xml" />
     <MESSAGE value="remove sha-1-hash.txt of the Resourcepack" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove sha-1-hash.txt of the Resourcepack" />
+    <MESSAGE value="Updated Library" />
+    <MESSAGE value="Edit the new Item Magic Stick" />
+    <MESSAGE value="update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
   </component>
 </project>
