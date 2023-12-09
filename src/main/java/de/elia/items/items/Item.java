@@ -5,6 +5,7 @@ import de.elia.api.thezepserapi.components.ComplexItem;
 
 import de.elia.items.items.creeperspawnegg.Creeper_Spawn_Egg;
 import de.elia.items.items.magicbook.Magic_Book;
+import de.elia.items.items.magicstick.Magic_Stick;
 import de.elia.items.items.zombiespawnegg.Zombie_Spawn_Egg;
 
 import org.bukkit.Location;
@@ -22,6 +23,7 @@ public class Item {
     new Zombie_Spawn_Egg(plugin);
     new Creeper_Spawn_Egg(plugin);
     new Magic_Book(plugin);
+    new Magic_Stick(plugin);
   }
 
   //Gets a specified item.

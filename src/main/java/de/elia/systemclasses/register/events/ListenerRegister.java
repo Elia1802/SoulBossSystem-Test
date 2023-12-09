@@ -9,6 +9,7 @@ import de.elia.bossfightcreator.listeners.login.LoginListener;
 import de.elia.bossfightcreator.executer.GameExecuter;
 import de.elia.items.listener.join.RecipeListener;
 import de.elia.items.listener.magicbook.MagicBookListener;
+import de.elia.items.listener.magicstick.MagicStickListener;
 import de.elia.soulboss.entitys.zombie.listener.DropListener;
 import de.elia.soulboss.entitys.zombie.ZombieBoss.ZombieBossListener;
 import de.elia.soulboss.entitys.zombie.listener.AttackListener;
@@ -39,6 +40,7 @@ public class ListenerRegister {
     LISTENERS.add(new JoinListener());
     LISTENERS.add(new BossfightJoinListener());
     LISTENERS.add(new BossFightQuitListener());
+    LISTENERS.add(new MagicStickListener(Main.main));
   }
 
   public static void registerListener(@NotNull PluginManager pluginManager, @NotNull JavaPlugin plugin){
