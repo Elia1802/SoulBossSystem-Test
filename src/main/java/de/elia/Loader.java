@@ -28,18 +28,18 @@ public class Loader implements PluginLoader {
     String libraryPath = projectPath + "/plugins/";
     classpathBuilder.addLibrary(new JarLibrary(Path.of(libraryPath + soulLibrary)));
     logger.info(soulLibrary + " loaded!");
-    logger.info("Loading Log4J-API 2.20.2 ...");
+    logger.info("Loading Log4J-API 2.22.0 ...");
     MavenLibraryResolver log4jAPI = new MavenLibraryResolver();
-    log4jAPI.addDependency(new Dependency(new DefaultArtifact("org.apache.logging.log4j:log4j-api:2.20.0"), null));
-    log4jAPI.addRepository((new RemoteRepository.Builder("log4j-api", "default", "https://repo.papermc.io/repository/maven-public/")).build());
+    log4jAPI.addDependency(new Dependency(new DefaultArtifact("org.apache.logging.log4j:log4j-api:2.22.0"), null));
+    log4jAPI.addRepository(new RemoteRepository.Builder("log4j-api", "default", "https://repo.papermc.io/repository/maven-public/").build());
     classpathBuilder.addLibrary(log4jAPI);
-    logger.info("Log4J-API 2.20.2 loaded!");
-    logger.info("Loading Log4J-Core 2.20.2 ...");
+    logger.info("Log4J-API 2.22.0 loaded!");
+    logger.info("Loading Log4J-Core 2.22.0 ...");
     MavenLibraryResolver log4jCore = new MavenLibraryResolver();
-    log4jCore.addDependency(new Dependency(new DefaultArtifact("org.apache.logging.log4j:log4j-core:2.20.0"), null));
-    log4jCore.addRepository((new RemoteRepository.Builder("log4j-core", "default", "https://repo.papermc.io/repository/maven-public/")).build());
+    log4jCore.addDependency(new Dependency(new DefaultArtifact("org.apache.logging.log4j:log4j-core:2.22.0"), null));
+    log4jCore.addRepository(new RemoteRepository.Builder("log4j-core", "default", "https://repo.papermc.io/repository/maven-public/").build());
     classpathBuilder.addLibrary(log4jCore);
-    logger.info("Log4J-Core 2.20.2 loaded!");
+    logger.info("Log4J-Core 2.22.0 loaded!");
     logger.info(NAME + " " + VERSION + " libraries loaded!");
   }
 }

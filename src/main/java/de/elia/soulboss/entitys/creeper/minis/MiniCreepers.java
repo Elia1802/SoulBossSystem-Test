@@ -8,10 +8,10 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.level.Level;
 
-import org.bukkit.craftbukkit.v1_20_R2.CraftWorld;
+import org.bukkit.craftbukkit.v1_20_R3.CraftWorld;
+import org.bukkit.craftbukkit.v1_20_R3.event.CraftEventFactory;
 
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_20_R2.event.CraftEventFactory;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.entity.ExplosionPrimeEvent;
 import org.bukkit.potion.PotionEffect;

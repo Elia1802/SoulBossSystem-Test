@@ -25,14 +25,14 @@ repositories {
 }
 
 dependencies {
-  paperDevBundle("1.20.2-R0.1-SNAPSHOT")
+  paperDevBundle("1.20.4-R0.1-SNAPSHOT")
   implementation(platform("com.intellectualsites.bom:bom-newest:1.37"))
-  compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:2.8.2")
-  compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit:2.5.2") { isTransitive = false }
+  compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:2.8.3")
+  compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit:2.8.3") { isTransitive = false }
   implementation("de.elia.api:SoulLibrary:3.0.1")
-  implementation("org.apache.logging.log4j:log4j-api:2.20.0")
-  implementation("org.apache.logging.log4j:log4j-core:2.20.0")
-  paperweightDevelopmentBundle("io.papermc.paper:dev-bundle:1.20.2-R0.1-SNAPSHOT")
+  implementation("org.apache.logging.log4j:log4j-api:2.22.0")
+  implementation("org.apache.logging.log4j:log4j-core:2.22.0")
+  paperweightDevelopmentBundle("io.papermc.paper:dev-bundle:1.20.4-R0.1-SNAPSHOT")
   // paperweightDevBundle("com.example.paperfork", "1.19.4-R0.1-SNAPSHOT")
 
   // You will need to manually specify the full dependency if using the groovy gradle dsl
