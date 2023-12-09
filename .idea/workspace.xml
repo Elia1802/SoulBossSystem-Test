@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58735afe-ddd7-496f-a56c-71149fbe5f47" name="Changes" comment="Added Item type">
+    <list default="true" id="58735afe-ddd7-496f-a56c-71149fbe5f47" name="Changes" comment="remove sha-1-hash.txt of the Resourcepack">
+      <change afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/magic_stick/2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/wooden_hoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/textures/item/magic_stick/2.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/magicstick/Magic_Stick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/listener/magicstick/MagicStickEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/listener/magicstick/MagicStickListener.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/drop/Drops.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/SoulLibrary-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library/SoulLibrary-3.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/SoulSMP-2.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/items/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/items/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/events/ListenerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/events/ListenerRegister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +56,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -61,25 +68,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "discord-application",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programmieren\SoulSMP\Entwicklungen\Code\SoulBossSystem-Test\library" />
+      <recent name="D:\Programmieren\SoulSMP\Entwicklungen\Code\SoulBossSystem-Test\resourcepack" />
+      <recent name="D:\Programmieren\SoulSMP\Entwicklungen\Code\SoulBossSystem-Test\resourcepack\soul\assets\minecraft\textures\item\magic_stick" />
     </key>
   </component>
   <component name="RunManager">
@@ -125,7 +134,12 @@
       <workItem from="1701597621072" duration="6365000" />
       <workItem from="1701608921222" duration="2754000" />
       <workItem from="1701859525375" duration="198000" />
-      <workItem from="1701859746130" duration="1708000" />
+      <workItem from="1701859746130" duration="5476000" />
+      <workItem from="1701866472217" duration="172000" />
+      <workItem from="1701955072029" duration="769000" />
+      <workItem from="1701963757841" duration="4187000" />
+      <workItem from="1702050191638" duration="4080000" />
+      <workItem from="1702148557894" duration="459000" />
     </task>
     <task id="LOCAL-00001" summary="update .gitignore">
       <option name="closed" value="true" />
@@ -191,7 +205,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701614259236</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor plugin instance">
+      <option name="closed" value="true" />
+      <created>1701863373533</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701863373533</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1701863440537</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701863440537</updated>
+    </task>
+    <task id="LOCAL-00011" summary="remove sha-1-hash.txt of the Resourcepack">
+      <option name="closed" value="true" />
+      <created>1701864433625</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701864433625</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +254,9 @@
     <MESSAGE value="update idea files" />
     <MESSAGE value="update library jar" />
     <MESSAGE value="Added Item type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Item type" />
+    <MESSAGE value="refactor plugin instance" />
+    <MESSAGE value="update workspace.xml" />
+    <MESSAGE value="remove sha-1-hash.txt of the Resourcepack" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove sha-1-hash.txt of the Resourcepack" />
   </component>
 </project>
