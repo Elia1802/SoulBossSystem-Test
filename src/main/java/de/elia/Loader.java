@@ -1,5 +1,6 @@
 package de.elia;
 
+import de.elia.PluginInfo.SoulLibrary;
 import io.papermc.paper.plugin.loader.PluginClasspathBuilder;
 import io.papermc.paper.plugin.loader.PluginLoader;
 import io.papermc.paper.plugin.loader.library.impl.JarLibrary;
@@ -22,7 +23,7 @@ public class Loader implements PluginLoader {
   public void classloader(@NotNull PluginClasspathBuilder classpathBuilder) {
     var logger = classpathBuilder.getContext().getLogger();
     logger.info("Loading " + NAME + " " + VERSION + " libraries...");
-    String soulLibrary = "SoulLibrary-3.0.1.jar";
+    String soulLibrary = SoulLibrary.NAME + "-" + SoulLibrary.VERSION + ".jar";
     logger.info("Loading " + soulLibrary);
     String projectPath = System.getProperty("user.dir");
     String libraryPath = projectPath + "/plugins/";
