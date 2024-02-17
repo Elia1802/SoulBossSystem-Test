@@ -1,6 +1,7 @@
 package de.elia.bossfightcreator.executer.game.zombie;
 
 import de.elia.api.achievements.Achievements;
+import de.elia.api.game.Game;
 import de.elia.api.timing.timer.TimerTasks;
 import de.elia.api.timing.utils.TimerUtils;
 import de.elia.api.timing.utils.TimerUtils.TimeRunnable;
@@ -9,7 +10,6 @@ import de.elia.bossfightcreator.BossFightCreatorMain;
 import de.elia.bossfightcreator.arena.Arena;
 import de.elia.bossfightcreator.arena.ArenaReBuilder;
 import de.elia.bossfightcreator.arena.ArenaSpawnLocation;
-import de.elia.bossfightcreator.executer.game.Game;
 import de.elia.party.Party;
 import de.elia.soulboss.entitys.zombie.ZombieBoss;
 
