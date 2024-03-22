@@ -12,7 +12,7 @@ import de.elia.systemclasses.plugin.SoulBossSystemMain;
 //Here all important instances saved
 public class Instances {
 
-  //public static final AchievementMain ACHIEVEMENT_MAIN = new AchievementMain();
+  public static final AchievementMain ACHIEVEMENT_MAIN = new AchievementMain();
   public static final BossFightCreatorMain BOSS_FIGHT_CREATOR = new BossFightCreatorMain();
   public static final ItemMain ITEM_MAIN = new ItemMain();
   public static final SoulBoss SOUL_BOSS = new SoulBoss();
