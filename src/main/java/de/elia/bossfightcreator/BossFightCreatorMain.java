@@ -1,11 +1,11 @@
 package de.elia.bossfightcreator;
 
+import de.elia.api.game.Game;
 import de.elia.api.loader.SoulPlugin;
 import de.elia.api.loader.exceptions.SoulPluginLoadException;
 import de.elia.api.logging.PluginLogger;
 
 import de.elia.Main;
-import de.elia.bossfightcreator.executer.game.Game;
 import de.elia.systemclasses.Instances;
 
 import org.bukkit.entity.Player;
@@ -22,7 +22,7 @@ public class BossFightCreatorMain implements SoulPlugin {
   private static BossFightCreatorMain bossFightCreatorMain;
   private static final Map<Player, Integer> playerStatusMap = new HashMap<>();
 
-  //This methode load this plugin.
+  //This methode loads this plugin.
   @Override
   public void enable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
     this.bossFightCreatorLogger().logInfo("Load BossFightCreator plugin...");
@@ -30,7 +30,7 @@ public class BossFightCreatorMain implements SoulPlugin {
     this.bossFightCreatorLogger().logInfo("BossFightCreator plugin loaded!");
   }
 
-  //This methode unload this plugin.
+  //This methode unloads this plugin.
   @Override
   public void disable(@NotNull JavaPlugin javaPlugin) throws SoulPluginLoadException {
     this.bossFightCreatorLogger().logInfo("Disable BossFightCreator...");

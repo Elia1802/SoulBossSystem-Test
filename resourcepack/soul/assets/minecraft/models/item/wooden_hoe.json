@@ -1,9 +1,10 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "item/magic_stick"
-  },
-  "overrides": [
-    { "predicate": { "custom_model_data": 2}, "model": "item/magic_stick/2" }
-  ]
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/wooden_hoe",
+		"particle": "item/wooden_hoe"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 1}, "model": "item/wooden_hoe/1" }
+	]
 }

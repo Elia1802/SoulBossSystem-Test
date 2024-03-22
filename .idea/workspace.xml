@@ -4,19 +4,120 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58735afe-ddd7-496f-a56c-71149fbe5f47" name="Changes" comment="update workspace.xml">
+    <list default="true" id="58735afe-ddd7-496f-a56c-71149fbe5f47" name="Changes" comment="Fix bugs and errors&#10;Update API">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/de.elia.SoulBossSystem-Test.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/PluginInfo$SoulLibrary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/PluginInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/achivementssystem/AchievementMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/achivementssystem/achievement/Achievement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/achivementssystem/commands/give/AchievementGiveCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/achivementssystem/commands/help/AchievementHelpCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/achivementssystem/listeners/bossfight/AchievementBossFightListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/arena/ArenaMobType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/arena/ArenaSpawnLocation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/commands/world/BossFightCreatorWorldCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/GameExecuter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$EndGameTimer$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$EndGameTimer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$EndGameTimer$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$GameBossBar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$StartGameTimer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$StartGameTimer$2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$StartGameTimer$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$StartGameTimer$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$StartGameTimer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/zombie/ZombieGame$GameEndTimer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/zombie/ZombieGame$GameEndTimer$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/zombie/ZombieGame$GameEndTimer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/zombie/ZombieGame$GameStartTimer$2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/zombie/ZombieGame$GameStartTimer$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/zombie/ZombieGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/listeners/bossfightconnections/join/BossfightJoinListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/listeners/bossfightconnections/quit/BossFightQuitListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/listeners/join/JoinListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/listeners/login/LoginListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/world/creator/CustomChunkGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/ItemMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/commands/help/ItemHelpCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/commands/items/ItemGiveCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/items/magicstick/Magic_Stick.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/listener/magicbook/MagicBookListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/listener/magicstick/MagicStickListener$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/recipes/CreeperSpawnEggRecipe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/recipes/ZombieSpawnEggRecipe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/items/recipes/loader/RecipeLoader$SpawnEggLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/party/utils/PartyUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/SoulBoss.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/block/BreakBlock$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/block/BreakBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/BossEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/creeper/CreeperBoss.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/equipment/armors/boots/Boots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/equipment/armors/leggins/Leggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/equipment/tools/sword/Sword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/listener/AttackListener$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/listener/AttackListener$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/listener/AttackListener$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/magic/attack/Attack$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/magic/attack/Attack$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/magic/attackaction/Actions$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/magic/attackaction/Actions$Timer$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/magic/attackaction/Actions$Timer$3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/magic/attackaction/Actions$Timer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/entitys/zombie/magic/attackaction/Actions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/soulboss/random/RandomUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/systemclasses/keys/NameSpacedKeys.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/systemclasses/messages/Message.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/systemclasses/plugin/commands/plugin/SoulBossSystemCommand$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/systemclasses/plugin/configuation/SoulBossSystemConfigurationLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/systemclasses/register/commands/CommandRegister.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/systemclasses/register/utils/UtilsLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/imagefiles/Creeper_Recipe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/imagefiles/Recipe_for_ZombieSpawnEgg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resourcepack/SoulSMP-2.2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/texturepack/TexturePackManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/texturepack/TexturePackPlayerState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/elia/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/creeper/CreeperGame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/zombie/ZombieGame$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/bossfightcreator/executer/game/zombie/ZombieGame$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/elia/systemclasses/register/events/ListenerRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/elia/systemclasses/register/events/ListenerRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/SoulBossSystem-Test-1.0.0-BETA-dev.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/SoulBossSystem-Test-1.0.0-BETA-dev.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/SoulLibrary-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library/SoulLibrary-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepack/soul/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/resourcepack/soul/pack.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/PluginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/PluginInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/gunpowder.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/gunpowder/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/magic_stick/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/stick/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/stone_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/stone_sword/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/wooden_hoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/models/item/stick.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/textures/item/gunpowder/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/textures/item/gunpowder/1.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/textures/item/magic_stick/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/textures/item/stick/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/textures/item/stone_sword/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcepack/soul/assets/minecraft/textures/item/stone_sword/1.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/achievement/Achievement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/achivementssystem/achievement/Achievement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/BossFightCreatorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/BossFightCreatorMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/Arena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/ArenaHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/arena/ArenaHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/GameExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/GameExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/Game.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/creeper/CreeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/bossfightcreator/executer/game/creeper/CreeperGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/CreeperBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/CreeperBoss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/minis/MiniCreepers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/minis/MiniCreepers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/ZombieBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/zombie/ZombieBoss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/drop/Drops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/soulboss/entitys/creeper/drop/Drops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/Instances.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/Instances.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/commands/CommandRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/commands/CommandRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/events/ListenerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/elia/systemclasses/register/events/ListenerRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +137,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SoulBossSystem-Test" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -71,22 +177,29 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.SoulBossSystem-Test [build].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programmieren/SoulSMP/Entwicklungen/Code/SoulBossSystem-Test/library&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programmieren\SoulSMP\Entwicklungen\Code\SoulBossSystem-Test\library" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programmieren\SoulSMP\Entwicklungen\Code\SoulBossSystem-Test\resourcepack\soul\assets\minecraft\models\item" />
       <recent name="D:\Programmieren\SoulSMP\Entwicklungen\Code\SoulBossSystem-Test\library" />
       <recent name="D:\Programmieren\SoulSMP\Entwicklungen\Code\SoulBossSystem-Test\resourcepack" />
       <recent name="D:\Programmieren\SoulSMP\Entwicklungen\Code\SoulBossSystem-Test\resourcepack\soul\assets\minecraft\textures\item\magic_stick" />
@@ -121,6 +234,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-f644763e9732-1e16d6ec" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -140,7 +260,35 @@
       <workItem from="1701955072029" duration="769000" />
       <workItem from="1701963757841" duration="4187000" />
       <workItem from="1702050191638" duration="4080000" />
-      <workItem from="1702148557894" duration="5113000" />
+      <workItem from="1702148557894" duration="7031000" />
+      <workItem from="1702203143256" duration="3573000" />
+      <workItem from="1702236127225" duration="1489000" />
+      <workItem from="1702307876249" duration="3634000" />
+      <workItem from="1702324568403" duration="558000" />
+      <workItem from="1702413588871" duration="508000" />
+      <workItem from="1702723368243" duration="990000" />
+      <workItem from="1702753498597" duration="9500000" />
+      <workItem from="1702994478392" duration="2764000" />
+      <workItem from="1703003594266" duration="628000" />
+      <workItem from="1703077514728" duration="161000" />
+      <workItem from="1704385551647" duration="831000" />
+      <workItem from="1704413741905" duration="48000" />
+      <workItem from="1704534835723" duration="913000" />
+      <workItem from="1704718569173" duration="556000" />
+      <workItem from="1704719204854" duration="17000" />
+      <workItem from="1704725917235" duration="937000" />
+      <workItem from="1704727078078" duration="20000" />
+      <workItem from="1704727112574" duration="505000" />
+      <workItem from="1708208364875" duration="1727000" />
+      <workItem from="1708210298791" duration="15000" />
+      <workItem from="1708211111921" duration="1765000" />
+      <workItem from="1708879765690" duration="233000" />
+      <workItem from="1708880086379" duration="3732000" />
+      <workItem from="1708930782863" duration="4862000" />
+      <workItem from="1709981053983" duration="138000" />
+      <workItem from="1709981415514" duration="597000" />
+      <workItem from="1709982435662" duration="1625000" />
+      <workItem from="1710002791162" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="update .gitignore">
       <option name="closed" value="true" />
@@ -262,7 +410,47 @@
       <option name="project" value="LOCAL" />
       <updated>1702149245251</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update PaperMC of 1.20.2-R0.1-SNAPSHOT to 1.20.4-R0.1-SNAPSHOT&#10;Update log4j (API/Core) of 2.20.0 to 2.20.0&#10;Update Resourcepack pack format of 18 to 26">
+      <option name="closed" value="true" />
+      <created>1702164234855</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702164234855</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update other files">
+      <option name="closed" value="true" />
+      <created>1702164256772</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702164256772</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Edit an info about SoulLibrary-3.0.1.jar">
+      <option name="closed" value="true" />
+      <created>1702757266455</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702757266455</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix Error by server start: Could not find library at D:\Minecraft\Server\servers\soulsmp\plugins\SoulLibrary-3.0.1">
+      <option name="closed" value="true" />
+      <created>1702757317398</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702757317398</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fix bugs and errors&#10;Update API">
+      <option name="closed" value="true" />
+      <created>1708209965325</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708209965325</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +480,15 @@
     <MESSAGE value="Updated Library" />
     <MESSAGE value="Edit the new Item Magic Stick" />
     <MESSAGE value="update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
+    <MESSAGE value="Update PaperMC of 1.20.2-R0.1-SNAPSHOT to 1.20.4-R0.1-SNAPSHOT&#10;Update log4j (API/Core) of 2.20.0 to 2.20.0&#10;Update Resourcepack pack format of 18 to 26" />
+    <MESSAGE value="Update other files" />
+    <MESSAGE value="Edit an info about SoulLibrary-3.0.1.jar" />
+    <MESSAGE value="Fix Error by server start: Could not find library at D:\Minecraft\Server\servers\soulsmp\plugins\SoulLibrary-3.0.1" />
+    <MESSAGE value="Fix bugs and errors&#10;Update API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs and errors&#10;Update API" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

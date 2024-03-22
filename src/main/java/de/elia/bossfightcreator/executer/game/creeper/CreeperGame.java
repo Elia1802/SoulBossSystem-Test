@@ -2,19 +2,19 @@ package de.elia.bossfightcreator.executer.game.creeper;
 
 import de.elia.api.achievements.Achievements;
 import de.elia.api.entityRegion.EntityRegion;
+import de.elia.api.game.Game;
 import de.elia.api.logging.PluginLogger;
-import de.elia.api.logging.error.SaveError;
 import de.elia.api.timing.timer.TimerTasks;
 import de.elia.api.timing.utils.TimerUtils;
 
 import de.elia.bossfightcreator.BossFightCreatorMain;
 import de.elia.bossfightcreator.arena.Arena;
 import de.elia.bossfightcreator.arena.ArenaReBuilder;
-import de.elia.bossfightcreator.executer.game.Game;
 import de.elia.party.Party;
 import de.elia.soulboss.SoulBoss;
 import de.elia.soulboss.entitys.BossEntity;
 import de.elia.soulboss.entitys.creeper.CreeperBoss;
+import de.elia.soulboss.entitys.creeper.drop.Drops;
 import de.elia.soulboss.entitys.creeper.minis.MiniCreepers;
 import de.elia.systemclasses.keys.NameSpacedKeys;
 
@@ -46,7 +46,6 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.ExplosionPrimeEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
@@ -70,7 +69,6 @@ import static de.elia.api.entityRegion.EntityRegionBuilder.containsEntity;
 import static de.elia.api.entityRegion.EntityRegionBuilder.createEntityRegionBorder;
 import static de.elia.api.messages.builder.MessageBuilder.aqua;
 import static de.elia.api.messages.builder.MessageBuilder.darkPurple;
-import static de.elia.api.messages.builder.MessageBuilder.gold;
 import static de.elia.api.messages.builder.MessageBuilder.gray;
 import static de.elia.api.messages.builder.MessageBuilder.message;
 import static de.elia.api.messages.builder.MessageBuilder.red;
@@ -199,6 +197,7 @@ public class CreeperGame implements Game, Listener {
     if (CreeperGame.this.region == null){
       entity.getBukkitEntity().getWorld().strikeLightningEffect(entity.getBukkitEntity().getLocation());
       CreeperGame.this.gameParty.members().forEach(player ->  giveAchievement(player, Achievements.BOSSFIGHT_CREEPER_END));
+      new Drops(this.gameOwner, entity.getBukkitEntity(), entity.getBukkitEntity().getLocation());
       CreeperGame.this.bossBar.remove(CreeperGame.this.boss);
       CreeperGame.this.logger.logInfo("The Boss is die!");
       CreeperGame.this.logger.logInfo("End Game!");
@@ -212,7 +211,7 @@ public class CreeperGame implements Game, Listener {
       CreeperGame.this.logger.logInfo("The Boss is die!");
       CreeperGame.this.logger.logInfo("End Game!");
       CreeperGame.this.logger.logInfo("Start game end timer!");
-      new EndGameTimer().start(60*20, null, CreeperGame.this.mainSpawnLocation, CreeperGame.this.plugin);
+      new EndGameTimer().start(61*20, null, CreeperGame.this.mainSpawnLocation, CreeperGame.this.plugin);
     }
 
   }
@@ -327,26 +326,10 @@ public class CreeperGame implements Game, Listener {
   private void onPlayerDie(@NotNull PlayerDeathEvent event){
     Player player = event.getPlayer();
     if (this.gameParty.members().contains(player)) {
-      this.lastPlayerLocations.put(player, player.getLocation());
-    }
-  }
-
-  //This event respawns a player if he has a location saved
-  @EventHandler
-  private void onPlayerRespawn(@NotNull PlayerRespawnEvent event) {
-    Player player = event.getPlayer();
-    if (this.gameParty.members().contains(player)) {
-      if (this.lastPlayerLocations.containsKey(player)) {
-        Location lastLocation = this.lastPlayerLocations.get(player);
-        if (lastLocation == null) {
-          message(player, gold("lastLocation is null! You can't back teleported to the game!"));
-          this.logger.logError("lastLocation is null! You can't back teleported to the game!");
-          SaveError.saveError(this.plugin, new Exception("lastLocation is null! You can't back teleported to the game!"), "");
-          return;
-        }else {
-          player.teleport(lastLocation);
-          this.lastPlayerLocations.remove(player);
-        }
+      if (player == this.gameOwner) {
+        new EndGameTimer().start(61*20, this.gameOwner, this.mainSpawnLocation, this.plugin);
+      }else {
+        this.gameParty.removePlayer(player);
       }
     }
   }
@@ -472,9 +455,9 @@ public class CreeperGame implements Game, Listener {
     protected void create(BossEntity boss) {
       BossBar bossBar = Bukkit.createBossBar("Test_BossBar_Creeper", BarColor.PINK, BarStyle.SEGMENTED_10);
       CreeperGame.this.gameParty.members().forEach(bossBar::addPlayer);
-      bossBar.setVisible(true);
       double progress = boss.health() / boss.maxHealth();
       bossBar.setProgress(progress);
+      bossBar.setVisible(true);
       this.bossBossBar.put(boss, bossBar);
     }
 
@@ -568,10 +551,16 @@ public class CreeperGame implements Game, Listener {
       new TimerUtils().countdownAndRun(time, new Runnable() {
         @Override
         public void run() {
-          if (!CreeperGame.this.boss.isDeadOrDying()) {
-            CreeperGame.this.boss.kill();
-          }
-          CreeperGame.EndGameTimer.this.timeMessage(60);
+          new BukkitRunnable(){
+
+            @Override
+            public void run() {
+              if (!CreeperGame.this.boss.isDeadOrDying()) {
+                CreeperGame.this.boss.setHealth(0.0F);
+                CreeperGame.this.bossBar.remove(CreeperGame.this.boss);
+              }
+            }
+          }.runTask(CreeperGame.this.plugin);
         }
       }, plugin);
       new TimerUtils().countdownInterval(time, new TimerUtils.TimeRunnable() {
@@ -579,6 +568,7 @@ public class CreeperGame implements Game, Listener {
         public void run(int ticks) {
           if (ticks % 20 == 0) {
             int secounds = ticks / 20;
+            if (secounds == 60)CreeperGame.EndGameTimer.this.timeMessage(secounds);
             if (secounds == 50)CreeperGame.EndGameTimer.this.timeMessage(secounds);
             if (secounds == 30)CreeperGame.EndGameTimer.this.timeMessage(secounds);
             if (secounds == 20)CreeperGame.EndGameTimer.this.timeMessage(secounds);

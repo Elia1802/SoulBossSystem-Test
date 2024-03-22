@@ -33,11 +33,11 @@ import static org.bukkit.Bukkit.getPluginManager;
 //This class loads the complete system. Its main class of all things in this system
 public class Main extends JavaPlugin {
 
-  public static Main main;
+  private static Main main;
   private static WorldCreator worldCreator;
-  public static World world;
+  private static World world;
   private WorldMain worldMain;
-  public static boolean isWorldEditReady;
+  private static boolean isWorldEditReady;
 
   //Load this system
   public void onEnable() {

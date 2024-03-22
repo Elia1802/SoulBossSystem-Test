@@ -1,10 +1,10 @@
 package de.elia.bossfightcreator.executer;
 
+import de.elia.api.game.Game;
 import de.elia.api.logging.PluginLogger;
 import de.elia.api.thezepserapi.Complex;
 import de.elia.api.thezepserapi.TheZepserAPI;
 
-import de.elia.bossfightcreator.executer.game.Game;
 import de.elia.bossfightcreator.executer.game.creeper.CreeperGame;
 import de.elia.bossfightcreator.executer.game.zombie.ZombieGame;
 import de.elia.bossfightcreator.arena.Arena;
@@ -82,7 +82,7 @@ public class GameExecuter implements Listener {
       logger.logInfo("Party created!");
       giveAchievement(player, BOSSFIGHT_ZOMBIE);
       logger.logInfo("Load a Arena for the Game...");
-      Optional<Arena> optionalArena = getFreeArena(ZOMBIE);
+      Optional<Arena> optionalArena = getFreeArena(ZOMBIE, player);
       if (optionalArena.isPresent()) {
         Arena arena = optionalArena.get();
         logger.logInfo("Arena Information:");
@@ -125,7 +125,7 @@ public class GameExecuter implements Listener {
       logger.logInfo("Party crated!");
       giveAchievement(player, BOSSFIGHT_CREEPER);
       logger.logInfo("Load a Arena for the Game");
-      Optional<Arena> optionalArena = getFreeArena(CREEPER);
+      Optional<Arena> optionalArena = getFreeArena(CREEPER, player);
       if (optionalArena.isPresent()) {
         Arena arena = optionalArena.get();
         logger.logInfo("Arena Information:");

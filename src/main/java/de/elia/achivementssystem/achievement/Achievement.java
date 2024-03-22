@@ -37,7 +37,7 @@ public class Achievement {
 
   //Give the player an Achievement
   public static void giveAchievement(@NotNull Player player, @NotNull Achievements achievement) {
-    if (!hasAchievement(player, achievement)) {//If player has not the achievement -> give player achievement
+    if (!hasAchievement(player, achievement)) {//If a player has not the achievement -> give player achievement
       SoulBossSystemConfigurationLoader.achievementStorage().set(player.getUniqueId() + ".Achievements." + achievement.dataID(), true);
       broadcastWithPrefix(aqua(player.getName()).append(gray(" hat den BossFight Erfolg ").append(aqua(achievement.getName()).append(gray(" erreicht")))));
       message(player, gray(achievement.target()));
@@ -45,17 +45,17 @@ public class Achievement {
       player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
       AchievementGiveEvent event = new AchievementGiveEvent(player, achievement);
       AchievementMain.achievementMain().main().getServer().getPluginManager().callEvent(event);
-    } else {//If player has the achievement -> return
+    } else {//If a player has the achievement -> return
       return;
     }
   }
 
   //Remove the Player an Achievement
   public static void removeAchievement(@NotNull Player player, @NotNull Achievements achievement) {
-    if (hasAchievement(player, achievement)) {//If player has the achievement -> give player achievement
+    if (hasAchievement(player, achievement)) {//If a player has the achievement -> give player achievement
       SoulBossSystemConfigurationLoader.achievementStorage().set(player.getUniqueId() + ".Achievements." + achievement.dataID(), null);
       message(player, gray("Du hast dem Spieler den BossFight Erfolg ").append(aqua(achievement.getName() + " (" + achievement.dataID() + ") ").append(gray("abgenommen!"))));
-    } else {//If player has not the achievement -> send error message
+    } else {//If a player has not the achievement -> send an error message
       message(player, red("Dieser Spieler hat diesen BossFight Erfolg nicht!"));
     }
   }

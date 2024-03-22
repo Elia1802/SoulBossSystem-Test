@@ -4,6 +4,7 @@ import de.elia.achivementssystem.commands.give.AchievementGiveCommand;
 import de.elia.achivementssystem.commands.help.AchievementHelpCommand;
 import de.elia.bossfightcreator.commands.help.BossFightCreatorHelpCommand;
 import de.elia.bossfightcreator.commands.world.BossFightCreatorWorldCommand;
+import de.elia.bossfightcreator.texturepack.TexturePackManager;
 import de.elia.items.commands.help.ItemHelpCommand;
 import de.elia.items.commands.items.ItemGiveCommand;
 import de.elia.party.commands.PartyCommand;
@@ -18,6 +19,8 @@ import org.bukkit.command.Command;
 import java.util.HashMap;
 import java.util.Map;
 
+import static de.elia.Main.main;
+
 //This class registers all commands
 public class CommandRegister {
   private static final Map<String, Command> COMMANDS = new HashMap<>();
@@ -31,10 +34,11 @@ public class CommandRegister {
   }
 
   static {
-    COMMANDS.put("achievementgive", new AchievementGiveCommand());
-    COMMANDS.put("achievementhelp", new AchievementHelpCommand());
+    //COMMANDS.put("achievementgive", new AchievementGiveCommand());
+    //COMMANDS.put("achievementhelp", new AchievementHelpCommand());
     COMMANDS.put("bossfightcreatorhelp", new BossFightCreatorHelpCommand());
     COMMANDS.put("bossfightcreatoworld", new BossFightCreatorWorldCommand());
+    COMMANDS.put("soulpack", new TexturePackManager(main(), main().getServer().getPluginManager()));
     COMMANDS.put("itemhelp", new ItemHelpCommand());
     COMMANDS.put("itemgive", new ItemGiveCommand());
     COMMANDS.put("soulbosssystemhelp", new SoulBossSystemHelpCommand());

@@ -31,16 +31,16 @@ public class ListenerRegister {
   static {
     LISTENERS.add(new AchievementBossFightListener());
     LISTENERS.add(new LoginListener());
-    LISTENERS.add(new GameExecuter(Main.main));
+    LISTENERS.add(new GameExecuter(Main.main()));
     LISTENERS.add(new RecipeListener());
-    LISTENERS.add(new MagicBookListener(Main.main));
+    LISTENERS.add(new MagicBookListener(Main.main()));
     LISTENERS.add(new DropListener());
     LISTENERS.add(new ZombieBossListener());
     LISTENERS.add(new AttackListener());
     LISTENERS.add(new JoinListener());
     LISTENERS.add(new BossfightJoinListener());
     LISTENERS.add(new BossFightQuitListener());
-    LISTENERS.add(new MagicStickListener(Main.main));
+    LISTENERS.add(new MagicStickListener(Main.main()));
   }
 
   public static void registerListener(@NotNull PluginManager pluginManager, @NotNull JavaPlugin plugin){
@@ -48,7 +48,7 @@ public class ListenerRegister {
   }
 
   public static void registerListener(){
-    registerListener(Main.main.getServer().getPluginManager(), Main.main);
+    registerListener(Main.main().getServer().getPluginManager(), Main.main());
   }
 
 }

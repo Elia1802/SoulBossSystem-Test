@@ -7,6 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
 import org.bukkit.World;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
@@ -18,7 +19,9 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 
-//This class handled and load all arenas.
+import static de.elia.api.messages.builder.MessageBuilder.*;
+
+//This class handled and loaded all arenas.
 public class ArenaHandler {
 
   public static final File FILE_PATH = new File(Main.main().getDataFolder() + "/arenas/");//Path of the schematics
@@ -29,24 +32,30 @@ public class ArenaHandler {
   public static int ARENA_OFFSET = 0;
 
   //Gets a free arena.
-  public static @NotNull Optional<Arena> getFreeArena(@NotNull ArenaMobType type) {
-    return ArenaHandler.getArenaWithType(ArenaState.FREE, type);
+  public static @NotNull Optional<Arena> getFreeArena(@NotNull ArenaMobType type, Player gameOwner) {
+    return ArenaHandler.getArenaWithType(ArenaState.FREE, type, gameOwner);
   }
 
   //Gets an arena with a specified state of a list.
   @NotNull
-  public static Optional<Arena> getArenaWithType(@NotNull ArenaState arenaState, @NotNull ArenaMobType type) {
-    Optional<ArrayList<Arena>> t = Optional.of(ArenaHandler.getArenasWithType(arenaState, type));
-    Random random = new Random();
-    int x = random.nextInt(t.get().size());
-    return Optional.ofNullable(ArenaHandler.getArenasWithType(arenaState, type).get(x));
+  public static Optional<Arena> getArenaWithType(@NotNull ArenaState arenaState, @NotNull ArenaMobType type, Player gameOwner) {
+    try {
+      Optional<ArrayList<Arena>> t = Optional.of(ArenaHandler.getArenasWithType(arenaState, type));
+      Random random = new Random();
+      int x = random.nextInt(t.get().size());
+      return Optional.ofNullable(ArenaHandler.getArenasWithType(arenaState, type).get(x));
+    } catch (Exception exception) {
+      exception.printStackTrace();
+      kickMessage(gameOwner, newLines(darkRed(exception.getMessage()), red("!!!BITTE MELDE DIES UMGEHEND IN EINEN TICKET!!!")));
+      return null;
+    }
   }
 
   //Gets all Arenas with a specify ArenaState of a list.
   @NotNull
   public static ArrayList<Arena> getArenasWithType(@NotNull ArenaState arenaState, @NotNull ArenaMobType type) {
     ArrayList<Arena> collectedArenas = new ArrayList<>();
-    arenas.values().forEach(arenas1 -> arenas1.stream().filter(arena -> arena.getState() == arenaState && arena.getMobType() == type).toList());
+    arenas.values().forEach(arenas1 -> collectedArenas.addAll(arenas1.stream().filter(arena -> arena.getState() == arenaState && arena.getMobType() == type).toList()));
     return collectedArenas;
   }
 
